@@ -59,7 +59,7 @@ colorTexture.magFilter = THREE.NearestFilter;
 const groupNewspaper = new THREE.Group();
 const geometry = new THREE.PlaneGeometry(1.5, 2);
 const material = new THREE.MeshBasicMaterial({
-  map: colorTexturecd ,
+  map: colorTexture ,
   side: THREE.DoubleSide,
 });
 
@@ -70,7 +70,7 @@ newspaper2.position.x = newspaper2.position.x - 2;
 const newspaper3 = new THREE.Mesh(geometry, material);
 newspaper3.position.x = newspaper3.position.x - 4;
 const newspaper4 = new THREE.Mesh(geometry, material);
-newspaper4.position.x = newspaper4.position.x + 4;
+newspaper4.position.y = newspaper4.position.y + 4;
 const newspaper5 = new THREE.Mesh(geometry, material);
 
 groupNewspaper.add(newspaper1, newspaper2, newspaper3, newspaper4, newspaper5);
